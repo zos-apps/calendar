@@ -13,10 +13,27 @@ npm install github:zos-apps/calendar
 ## Usage
 
 ```tsx
-import ZCalendar from '@zos-apps/calendar';
+import App from '@zos-apps/calendar';
 
-function App() {
-  return <ZCalendar />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.calendar",
+    "name": "Calendar",
+    "icon": "📅",
+    "category": "productivity",
+    "permissions": ["storage"],
+    "installable": true
+  }
 }
 ```
 
