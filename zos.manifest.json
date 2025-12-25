@@ -1,0 +1,14 @@
+{
+  "id": "ai.hanzo.calendar",
+  "name": "Calendar",
+  "version": "4.2.0",
+  "description": "Beautiful calendar with event support",
+  "icon": "📅",
+  "category": "productivity",
+  "author": "Hanzo AI",
+  "repository": "https://github.com/zos-apps/calendar",
+  "minSdkVersion": "4.0.0",
+  "permissions": ["storage"],
+  "main": "src/index.tsx",
+  "installable": true
+}
