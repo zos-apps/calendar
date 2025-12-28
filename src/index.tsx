@@ -25,7 +25,7 @@ const Calendar: React.FC<CalendarProps> = ({ onClose }) => {
   const isToday = (day: number) => day === today.getDate() && date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear();
 
   return (
-    <div className="h-full flex flex-col bg-white">
+    <div className="h-full flex flex-col bg-white text-gray-900">
       <div className="flex items-center justify-between p-4 border-b">
         <h1 className="text-2xl font-bold flex items-center gap-2"><span>📅</span>{MONTHS[date.getMonth()]} {date.getFullYear()}</h1>
         <div className="flex gap-2">

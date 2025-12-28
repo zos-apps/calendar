@@ -20,7 +20,27 @@
         "height": 700
       },
       "resizable": true
-    }
+    },
+    "about": "Manage your schedule with this intuitive calendar application.",
+    "help": [
+      "Click date to add event",
+      "Drag to reschedule",
+      "Use arrows to navigate months"
+    ],
+    "docs": "https://zos-apps.github.io/calendar",
+    "site": "https://github.com/zos-apps/calendar",
+    "shortcuts": [
+      "T Today",
+      "← Previous month",
+      "→ Next month"
+    ],
+    "features": [
+      "Month/week/day views",
+      "Event creation",
+      "Reminders",
+      "Multiple calendars",
+      "Sync support"
+    ]
   },
   "scripts": {
     "build": "tsup",
@@ -53,5 +73,13 @@
     "calendar",
     "macos",
     "desktop"
-  ]
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
