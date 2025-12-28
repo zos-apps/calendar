@@ -1,5 +1,5 @@
 {
-  "name": "@anthropic/calendar",
+  "name": "@zos-apps/calendar",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -11,10 +11,47 @@
     "icon": "📅",
     "category": "productivity",
     "description": "Manage your schedule",
-    "permissions": ["storage.local"],
-    "window": { "defaultSize": { "width": 900, "height": 700 }, "resizable": true }
+    "permissions": [
+      "storage.local"
+    ],
+    "window": {
+      "defaultSize": {
+        "width": 900,
+        "height": 700
+      },
+      "resizable": true
+    }
   },
-  "scripts": { "build": "tsup", "dev": "tsup --watch" },
-  "peerDependencies": { "react": "^18.0.0", "react-dom": "^18.0.0" },
-  "devDependencies": { "@types/react": "^18.3.0", "@types/react-dom": "^18.3.0", "tsup": "^8.3.5", "typescript": "^5.7.2" }
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "description": "Manage your schedule",
+  "homepage": "https://zos-apps.github.io/calendar",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/calendar/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "calendar",
+    "macos",
+    "desktop"
+  ]
 }
