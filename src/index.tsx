@@ -1,11 +1,18 @@
-import React, { useState } from 'react';
-
-interface CalendarProps { onClose: () => void; }
+import { useState } from 'react';
+import type { AppProps } from '@zos-apps/config';
+import { useLocalStorage } from '@zos-apps/config';
 
 const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-const Calendar: React.FC<CalendarProps> = ({ onClose }) => {
+interface CalendarEvent {
+  id: string;
+  date: string; // YYYY-MM-DD
+  title: string;
+}
+
+const Calendar: React.FC<AppProps> = ({ onClose: _onClose }) => {
+  const [_events, _setEvents] = useLocalStorage<CalendarEvent[]>('calendar-events', []);
   const [date, setDate] = useState(new Date());
   const today = new Date();
 
